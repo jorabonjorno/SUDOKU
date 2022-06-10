@@ -99,29 +99,7 @@ console.log(numbersRemove(rows[1], 5))
 // something representing a board after
 // your solver has tried to solve it.
 // How you represent your board is up to you!
-function quadro(boardString,i= 0,q = 2,j,w=2) {
-    let count1 = 0
-    let count2 = 0
-    for( i; i<= q;i++){
-        for(j ;j <= w; j++){
-            if (row[j][i] !== '-') {
-                count1 += +row[j][i]
 
-            }else{
-                arr/sd
-            }
-
-        }
-        count2 += 1
-    }
-
-    if(count2 <=3){
-        return quadro(boardString,count-1,i,q,j+3,w+3)
-    }else{
-        return quadro(boardString,count,i+3,q+3,j,w)
-    }
-
-  console.log('first changes');
 }
 
 // Returns a boolean indicating whether
@@ -129,6 +107,8 @@ function quadro(boardString,i= 0,q = 2,j,w=2) {
 // The input board will be in whatever
 // form `solve` returns.
 function isSolved(board) {
+
+
 
 }
 
