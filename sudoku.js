@@ -4,26 +4,45 @@
 // your solver has tried to solve it.
 // How you represent your board is up to you!
 
+
+
 function solve(boardString) {
-  console.log('first changes');
+  const size = 9
+  const boxSize = 3;
+  // console.log('first changes');
 
 
-  let convertStr = function () {
+  const convertStr = function () {
     let y = boardString.split("").map((el) => el == '-' ? '.' : el)
-    let arrnew = []
+    let arrBoard = []
     for (let i = 0; i < boardString.length; i += 9) {
-      arrnew.push(y.slice(i, i + 9))
+      arrBoard.push(y.slice(i, i + 9))
     }
-    return arrnew;
+    return arrBoard;
   }
-  // console.log(convertStr());
+  // console.table(convertStr());
+
+  const findEmpty = (arrBoard) => {
+    for (let r = 0; r < size; r++) {
+      for (let c = 0; c < size; c++) {
+        if (arrBoard[r][c] === '-') {
+          // console.log(`r: ${r} c: ${c}`);        
+          return [r, c];
+        }
+      }
+    }
+    return null;
+  };
+
+console.log(findEmpty())
+
+
+
+
+
   
-  
-
-
-
-  
-
+// solve(boardString)
+// return board;
 }
 
 // Returns a boolean indicating whether
@@ -31,6 +50,8 @@ function solve(boardString) {
 // The input board will be in whatever
 // form `solve` returns.
 function isSolved(board) {
+
+
 
 }
 
