@@ -3,8 +3,21 @@
 // something representing a board after
 // your solver has tried to solve it.
 // How you represent your board is up to you!
+function trySolve(boardString) {
+  let arr = []
+  for (let i = 0;i<=8;i++){
+    for (let j = 0; j<=8;j+++){
+      if (number[j] !== '-'){
+        arr.push(number[j])
+      }
+    }
+  }
+  return arr
+}
+
+
 function solve(boardString) {
-  for (let )
+
 }
 
 // Returns a boolean indicating whether
