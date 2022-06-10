@@ -3,8 +3,27 @@
 // something representing a board after
 // your solver has tried to solve it.
 // How you represent your board is up to you!
+
 function solve(boardString) {
   console.log('first changes');
+
+
+  let convertStr = function () {
+    let y = boardString.split("").map((el) => el == '-' ? '.' : el)
+    let arrnew = []
+    for (let i = 0; i < boardString.length; i += 9) {
+      arrnew.push(y.slice(i, i + 9))
+    }
+    return arrnew;
+  }
+  // console.log(convertStr());
+  
+  
+
+
+
+  
+
 }
 
 // Returns a boolean indicating whether
